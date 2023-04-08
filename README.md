@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Productivity Management App
+
+The Productivity Management App is a web-based tool designed to help individuals and teams organize and optimize their daily tasks, projects, and schedules. With features such as task lists, calendars, project tracking, time tracking, and goal setting, this app can help users stay on top of their workload, prioritize tasks, and increase efficiency.
+
+## Technologies Used
+
+This app is built using the following technologies:
+
+- Next.js
+- Tailwind CSS
+- Prisma
 
 ## Getting Started
 
-First, run the development server:
+To get started with this app, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. Clone this repository to your local machine.
+2. Install the required dependencies using `npm install`.
+3. Create a `.env` file in the root directory of the project and set the required environment variables (database connection details, etc).
+4. Run the app using `npm run dev`.
+5. Open your web browser and navigate to `http://localhost:3000`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This app includes the following features:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Task lists: Create, edit, and complete tasks.
+- Calendars: View your tasks and events in a calendar view.
+- Project tracking: Organize your tasks by project and track progress.
+- Time tracking: Log the time you spend on tasks and projects.
+- Goal setting: Set goals and track your progress towards achieving them.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Contributing
 
-## Learn More
+Contributions to this app are welcome! If you have any suggestions, bug reports, or feature requests, please create a new issue in the GitHub repository.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This app is licensed under the MIT License. See the `LICENSE` file for more details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
