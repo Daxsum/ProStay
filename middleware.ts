@@ -12,7 +12,7 @@ const verifyJWT = async (jwt) => {
 };
 
 export default async function middleware(req, res) {
-  const {pathname} = req.nextUrl
+  const { pathname } = req.nextUrl;
 
   if (
     pathname.startsWith("/_next") ||
@@ -25,21 +25,19 @@ export default async function middleware(req, res) {
     return NextResponse.next();
   }
 
-  const jwt = req.cookies.get(process.env.COOKIE_NAME)
-  console.log(jwt)
+  const jwt = req.cookies.get(process.env.COOKIE_NAME);
+  console.log(jwt);
 
   if (!jwt) {
-    req.nextUrl.pathname = '/signin'
-    return NextResponse.redirect(req.nextUrl)
+    req.nextUrl.pathname = "/signin";
+    return NextResponse.redirect(req.nextUrl);
   }
 
   try {
-    await verifyJWT(jwt.value)
+    await verifyJWT(jwt.value);
     return NextResponse.next();
-  } catch(e) {
+  } catch (e) {
     req.nextUrl.pathname = "/signin";
     return NextResponse.redirect(req.nextUrl);
   }
 }
-
-
