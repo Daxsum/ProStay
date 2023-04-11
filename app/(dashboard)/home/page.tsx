@@ -8,7 +8,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import TaskCard from "../../../components/TaskCard";
-import { NewProject } from "@/components/NewProject";
+import NewProject from "@/components/NewProject";
 const getData = async () => {
   await delay(2000);
   const user = await getUserFromCookie(cookies());
